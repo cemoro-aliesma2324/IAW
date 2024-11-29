@@ -28,8 +28,7 @@
 	}
 	*/
 	if($_GET['op']==='new') include('view/newUser.php');	
-	if($_GET['op']==='mng') include('view/mngUser.php');	
-	if($_POST['op']==='sch') include('view/schUser.php');	
+	if($_REQUEST['op']==='mng') include('view/mngUser.php');	
 	getMessage();
 ?>	
 </body>

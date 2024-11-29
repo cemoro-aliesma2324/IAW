@@ -12,7 +12,7 @@ function getUsers_DAO() {
 }
 
 function userSearch_DAO($textToSearch) {
-	$query = "SELECT users.user, users.name FROM users WHERE users.user LIKE '%$textToSearch%'";
+	$query = "SELECT users.user, users.name FROM users WHERE users.user LIKE '%$textToSearch%' AND users.type='U'";
 	return executeQuery($query);
 }
 ?>
